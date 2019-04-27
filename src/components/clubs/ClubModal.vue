@@ -18,9 +18,6 @@
             </blockquote>
           </details>
           <hr>
-          <p>
-            {{ currentClub.description }}
-          </p>
         </div>
       </section>
       <footer class="modal-card-foot">

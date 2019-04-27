@@ -14,10 +14,10 @@
       <div class="container">
         <div class="navbar-brand">
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
@@ -25,9 +25,12 @@
               All Clubs
             </a>
 
-        <a class="navbar-item">
-          Search
-        </a>
+            <a class="navbar-item">
+              Search
+            </a>
+            <a class="navbar-item add-club-modal-link" @click="$emit('open-add-club-modal')" title="Add a new club">
+              <i class="fas fa-folder-plus"></i>
+            </a>
           </div>
 
           <div class="navbar-end">
@@ -55,8 +58,10 @@ export default {
 <style>
 
 </style>
-pt>
 
-<style>
 
+<style scoped>
+.add-club-modal-link {
+  font-size: 30px;
+}
 </style>
